@@ -1,0 +1,25 @@
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ambientes virtuais
+venv/
+.env
+
+# Dados pesados
+*.csv
+*.xlsx
+*.pdf
+
+# Modelos de Machine Learning
+*.pkl
+*.h5
+*.model
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
