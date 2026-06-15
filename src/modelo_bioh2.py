@@ -111,7 +111,7 @@ plt.text(0.05, 0.95, f"R² = {r2:.4f}",
          bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
 
 # Equação no canto inferior direito
-plt.text(0.05, 0.20, equacao,
+plt.text(0.55, 0.08, equacao,
          transform=plt.gca().transAxes,
          fontsize=9, verticalalignment='top',
          bbox=dict(boxstyle='round', facecolor='lightyellow', alpha=0.9))
