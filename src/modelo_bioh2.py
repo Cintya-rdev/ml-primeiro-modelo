@@ -130,12 +130,15 @@ print("\nGráfico salvo em outputs/modelo_bioh2.png")
 # ========================
 print("\n--- Simulando um novo experimento ---")
 novo_experimento = pd.DataFrame({
-    "pH": [6.5],
+    "pH": [5.0],
     "Temperatura": [35.0],
     "Tempo": [24.0],
-    "Conc_Inicial": [20.0]
+    "Conc_Inicial": [5.0]
 })
 
 previsao = modelo.predict(novo_experimento)
-print(f"pH: 6.5 | Temperatura: 35°C | Tempo: 24h | Conc. Inicial: 20 g/L")
+print(f"pH: {novo_experimento['pH'][0]} | "
+      f"Temperatura: {novo_experimento['Temperatura'][0]}°C | "
+      f"Tempo: {novo_experimento['Tempo'][0]}h | "
+      f"Conc. Inicial: {novo_experimento['Conc_Inicial'][0]} g/L")
 print(f"Consumo previsto: {previsao[0]:.2f} g/L")
